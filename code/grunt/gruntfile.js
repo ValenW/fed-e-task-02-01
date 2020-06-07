@@ -44,6 +44,9 @@ const data = {
 
 module.exports = grunt => {
   grunt.initConfig({
+    clean: {
+      main: ['dist']
+    },
     swig: {
       options: {
         data,
@@ -96,5 +99,5 @@ module.exports = grunt => {
 
   loadGruntTasks(grunt)
 
-  grunt.registerTask('default', ['sass', 'babel', 'watch'])
+  grunt.registerTask('default', ['clean', 'sass', 'babel', 'swig', 'watch'])
 }
