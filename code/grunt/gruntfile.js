@@ -86,6 +86,10 @@ module.exports = grunt => {
       css: {
         files: ['src/assets/styles/*.scss'],
         tasks: ['css']
+      },
+      html: {
+        files: ['src/**.html'],
+        tasks: ['swig']
       }
     }
   })
