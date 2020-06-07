@@ -37,13 +37,23 @@
     "maintained node versions",
     "not dead"
   ],
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china"
+  },
   "dependencies": {
     "bootstrap": "4.4.1",
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-load-plugins": "^2.0.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-swig": "^0.9.1",
     "jquery": "3.4.1",
     "popper.js": "1.16.1"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "engines": {
     "node": ">=6"
   }
