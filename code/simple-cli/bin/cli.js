@@ -26,10 +26,8 @@ inquirer.prompt([
   }
 ]).then(inputs => {
   Object.assign(config, inputs)
-  console.log(config)
 
   const distPath = path.join(cwd, config.distPath)
-  console.log(distPath)
   render(tmpPath, distPath)
 })
 
@@ -41,7 +39,7 @@ const render = (tmpPath, distPath) => {
       fs.mkdirSync(distPath)
     }
     fileNames.forEach(fileName => {
-      const fullTmpPath = path.join(tmpPath, fileName);
+      const fullTmpPath = path.join(tmpPath, fileName)
       const fullDistPath = path.join(distPath, fileName)
       fs.stat(fullTmpPath, (err, stats) => {
         if (err) throw err
@@ -49,7 +47,6 @@ const render = (tmpPath, distPath) => {
         if (stats.isFile()) {
           ejs.renderFile(fullTmpPath, config, (err, result) => {
             if (err) throw err
-            console.log(result)
             fs.writeFileSync(fullDistPath, result)
           })
         } else if (stats.isDirectory()) {
