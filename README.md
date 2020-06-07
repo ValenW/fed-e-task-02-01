@@ -38,13 +38,13 @@
 2. 根据配置遍历文件/模板, 并将需要的数据写入其中
 3. 将渲染结果写入目标路径中
 
-[代码](./code/simple-cli/simple-cli.js)
+[代码](./code/simple-cli/bin/cli.js)
 
 ### 第二题
 
-[代码](./code/grunt/gulpfile.js)
+[代码](./code/gulp/gulpfile.js)
 
 ### 第三题
 
-[代码](./code/gulp/gruntfile.js)
+[代码](./code/grunt/gruntfile.js)
 
