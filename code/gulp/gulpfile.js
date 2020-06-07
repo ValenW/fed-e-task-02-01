@@ -54,7 +54,7 @@ const clean = () => {
 
 const page = () => {
   return src('**/*.html', { base: 'src', cwd: 'src' })
-    .pipe(plugins.swig({ data }))
+    .pipe(plugins.swig({ data, defaults: { cache: false } }))
     .pipe(dest('temp'))
 }
 
