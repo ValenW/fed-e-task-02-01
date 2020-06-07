@@ -42,9 +42,9 @@
 
 ### 第二题
 
-[代码](./code/grunt/gruntfile.js)
+[代码](./code/grunt/gulpfile.js)
 
 ### 第三题
 
-[代码](./code/gulp/gulpfile.js)
+[代码](./code/gulp/gruntfile.js)
 
